@@ -9,7 +9,7 @@
       "options": ["Flashblocks (200ms transactions)", "Bitcoin integration", "Shutting down testnet", "Moving to Solana"],
       "correctIndex": 0,
       "sourceUrl": "https://warpcast.com/base",
-      "sourceCast": "Base is testing Flashblocks to reduce tx times from 2s to 200ms",
+      "sourceCast": "Base is testing Flashblocks to reduce tx times from 2s to 200ms.",
       "explanation": "Base announced Flashblocks technology to dramatically reduce transaction processing times from 2 seconds to just 200 milliseconds.",
       "difficulty": "medium",
       "category": "product-update"
