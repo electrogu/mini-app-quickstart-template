@@ -87,7 +87,7 @@ export default function Home() {
           <div className="space-y-4">
             <div className="text-6xl mb-4">🧠</div>
             <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Base Weekly News Quiz
+              BaseGenius
             </h1>
             <p className="text-xl text-gray-600 max-w-xl mx-auto">
               Test your knowledge of this week's Farcaster and Base ecosystem news!

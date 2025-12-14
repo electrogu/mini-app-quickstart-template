@@ -2,7 +2,7 @@ import "@nomicfoundation/hardhat-ethers";
 import hre from "hardhat";
 
 async function main() {
-  const name = process.env.CONTRACT_NAME || "Base News Genius Badge";
+  const name = process.env.CONTRACT_NAME || "BaseGenius Badge";
   const symbol = process.env.CONTRACT_SYMBOL || "BNGB";
 
   console.log("Deploying QuizResultNFT...");

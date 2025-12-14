@@ -61,7 +61,7 @@ export default function ResultsCard({
                                 ✅ NFT Badge Claimed!
                             </h3>
                             <p className="text-gray-600">
-                                Your "Week {weekNumber} News Genius" badge has been minted to your wallet!
+                                Your "Week {weekNumber} BaseGenius" badge has been minted to your wallet!
                             </p>
                             {nftTokenId && (
                                 <p className="text-sm font-mono text-gray-500">
@@ -85,7 +85,7 @@ export default function ResultsCard({
                                 You've earned an NFT badge!
                             </h3>
                             <p className="text-gray-600">
-                                Connect your wallet and complete the quiz to claim your "Week {weekNumber} News Genius" badge on Base blockchain
+                                Connect your wallet and complete the quiz to claim your "Week {weekNumber} BaseGenius" badge on Base blockchain
                             </p>
                             <div className="text-sm text-gray-500 bg-blue-50 border border-blue-200 rounded-lg p-3">
                                 💡 Tip: Connect your wallet before starting the quiz to automatically receive your NFT badge!

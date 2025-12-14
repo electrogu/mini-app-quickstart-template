@@ -49,7 +49,7 @@ NFT_CONTRACT_ADDRESS=
 NFT_STORAGE_KEY=your_nft_storage_api_key_here
 
 # 4. Contract Metadata (optional)
-CONTRACT_NAME="Base News Genius Badge"
+CONTRACT_NAME="BaseGenius Badge"
 CONTRACT_SYMBOL="BNGB"
 
 # 5. For BaseScan verification (optional)
@@ -92,7 +92,7 @@ npx hardhat run --network baseSepolia scripts/deploy.ts
 **Expected output:**
 ```
 Deploying QuizResultNFT...
-Name: Base News Genius Badge
+Name: BaseGenius Badge
 Symbol: BNGB
 
 ✅ QuizResultNFT deployed to: 0xYourContractAddress
@@ -111,7 +111,7 @@ NFT_CONTRACT_ADDRESS=0xYourContractAddress
 ## Step 5: Verify Contract on BaseScan (Optional but Recommended)
 
 ```bash
-npx hardhat verify --network baseSepolia 0xYourContractAddress "Base News Genius Badge" "BNGB"
+npx hardhat verify --network baseSepolia 0xYourContractAddress "BaseGenius Badge" "BNGB"
 ```
 
 This makes your contract visible on https://sepolia.basescan.org

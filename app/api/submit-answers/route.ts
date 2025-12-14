@@ -122,19 +122,19 @@ async function uploadMetadataToIPFS(
   const client = new NFTStorage({ token: NFT_STORAGE_KEY });
 
   // Fetch the image and convert to Blob
-  const imageUrl = 'https://via.placeholder.com/500x500?text=News+Genius+Badge'; // Replace with actual badge image
+  const imageUrl = 'https://via.placeholder.com/500x500?text=BaseGenius+Badge'; // Replace with actual badge image
   const imageResponse = await fetch(imageUrl);
   const imageBlob = await imageResponse.blob();
 
   const metadata = {
-    name: `Week ${weekNumber} News Genius Badge`,
-    description: `Perfect score (5/5) on Base Weekly News Quiz - Week ${weekNumber}. You're a true Base news expert!`,
+    name: `Week ${weekNumber} BaseGenius Badge`,
+    description: `Perfect score (5/5) on BaseGenius - Week ${weekNumber}. You're a true Base news expert!`,
     image: imageBlob, // Now it's a Blob, not a string
     attributes: [
       { trait_type: 'Week', value: weekNumber },
       { trait_type: 'Score', value: score },
       { trait_type: 'Quiz ID', value: quizId },
-      { trait_type: 'Achievement', value: 'News Genius' },
+      { trait_type: 'Achievement', value: 'BaseGenius' },
       { trait_type: 'Owner', value: userAddress },
     ],
   };
