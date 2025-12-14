@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Source_Code_Pro } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google"; // 1. Fontu değiştirdik
 import { SafeArea } from "@coinbase/onchainkit/minikit";
 import { minikitConfig } from "../minikit.config";
 import { RootProvider } from "./rootProvider";
@@ -25,14 +25,11 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const inter = Inter({
-  variable: "--font-inter",
+// 2. Base ve Coinbase'in çok sevdiği o modern font
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-});
-
-const sourceCodePro = Source_Code_Pro({
-  variable: "--font-source-code-pro",
-  subsets: ["latin"],
+  weight: ['400', '500', '600', '700', '800'], // Kalınlık seçenekleri
+  variable: "--font-jakarta",
 });
 
 export default function RootLayout({
@@ -43,7 +40,8 @@ export default function RootLayout({
   return (
     <RootProvider>
       <html lang="en">
-        <body className={`${inter.variable} ${sourceCodePro.variable}`}>
+        {/* 3. Fontu tüm gövdeye uyguladık ve 'antialiased' ile keskinleştirdik */}
+        <body className={`${jakarta.className} antialiased bg-gray-50`}>
           <SafeArea>{children}</SafeArea>
         </body>
       </html>
