@@ -27,7 +27,7 @@ export const minikitConfig = {
     description:
       "Answer 5 questions about this week's Farcaster & Base news and earn an NFT badge! New questions every week.",
     screenshotUrls: [],
-    iconUrl: `${ROOT_URL}/icon.png`,
+    iconUrl: `${ROOT_URL}/new_icon.png`,
     splashImageUrl: `${ROOT_URL}/new_splash.png`,
     splashBackgroundColor: "#0a1628",
     homeUrl: ROOT_URL,
